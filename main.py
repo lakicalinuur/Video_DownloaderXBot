@@ -240,7 +240,7 @@ async def download_video(url: str, bot_username: str):
 async def download_audio_only(url: str, bot_username: str):
     loop = asyncio.get_running_loop()
     lowered_url = url.lower()
-    is_supported = any(domain in lowered_url for domain in ["youtube.com", "youtu.be", "facebook.com", "fb.watch"])
+    is_supported = any(domain in lowered_url for domain in ["youtube.com", "youtu.be"])
     if not is_supported:
         return None
     try:
