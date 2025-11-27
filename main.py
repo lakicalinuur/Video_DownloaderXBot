@@ -368,7 +368,7 @@ async def start_next_download():
 async def start(client, message: Message):
     if not await ensure_joined(client, message):
         return
-    await message.reply("👋 Salaam! Send me your video link so I can download")
+    await message.reply("👋 Salaam! Send me your video link so I can download Follow me on Github https://github.com/orlaki")
 
 @pyro_client.on_message(filters.private & filters.text)
 async def handle_link(client, message: Message):
