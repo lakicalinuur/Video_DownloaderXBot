@@ -98,7 +98,7 @@ lock = None
 USER_SUCCESS_PATH = "user_success.json"
 user_success = {}
 counters_lock = None
-USER_FREE_DOWNLOADS = 3
+USER_FREE_DOWNLOADS = 2
 
 async def ensure_primitives():
     global queue, lock, counters_lock
