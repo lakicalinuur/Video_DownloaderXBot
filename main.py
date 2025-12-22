@@ -440,7 +440,12 @@ async def start_next_download():
 
 @pyro_client.on_message(filters.private & filters.command("start"))
 async def start(client, message: Message):
-    await message.reply("👋 Hello!\nSend me any video link you want to download.")
+    await message.reply("""Welcome 👋
+
+This bot lets you download videos from
+YouTube, TikTok, Instagram, and more.
+
+👉 Just send the video link""")
 
 @pyro_client.on_message(filters.private & filters.text)
 async def handle_link(client, message: Message):
